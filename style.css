@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+    background-color: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+/* the blue button, i use this in many places */
+.btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 12px 26px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: #2563eb;
+    border: 1px solid #d0d0d0;
+}
+
+.btn-light:hover {
+    background-color: #f0f4ff;
+    color: #1d4ed8;
+}
+
+
+/* nav bar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 60px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo img {
+    width: auto;
+    height: 40px;
+}
+
+.nav-links a {
+    color: #555555;
+    margin: 0 18px;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+.nav-button .btn {
+    padding: 10px 22px;
+}
+
+
+/* hero */
+.hero {
+    background-image: linear-gradient(rgba(10, 15, 26, 0.7), rgba(10, 15, 26, 0.7)), url("./assets/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 100px 20px 120px 20px;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.hero h1 em {
+    font-style: italic;
+}
+
+.hero p {
+    max-width: 620px;
+    margin: 0 auto 90px auto;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #dddddd;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 12px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666666;
+    font-size: 16px;
+    margin-bottom: 45px;
+}
+
+
+/* speakers cards */
+.speakers {
+    padding: 80px 60px;
+}
+
+.speakers .section-title {
+    margin-bottom: 45px;
+}
+
+.speaker-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.speaker-card {
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+
+.speaker-card img {
+    height: 240px;
+    object-fit: cover;
+}
+
+.speaker-info {
+    padding: 20px;
+}
+
+.speaker-info .label {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.speaker-info h3 {
+    font-size: 20px;
+    margin: 8px 0 5px 0;
+}
+
+.speaker-info p {
+    color: #666666;
+    font-size: 15px;
+}
+
+
+/* pricing cards */
+.pricing {
+    padding: 80px 60px;
+    background-color: #f7f8fa;
+}
+
+.price-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    max-width: 1050px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.price-card {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 12px;
+    padding: 35px 30px;
+    text-align: left;
+}
+
+.price-card-pro {
+    background-color: #111827;
+    color: #ffffff;
+    position: relative;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.popular {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #2563eb;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+}
+
+.price-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.price {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.price-for {
+    color: #888888;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.price-card ul {
+    list-style: none;
+    margin-bottom: 28px;
+}
+
+.price-card ul li {
+    padding: 7px 0;
+    font-size: 15px;
+    color: #555555;
+}
+
+.price-card-pro ul li {
+    color: #cccccc;
+}
+
+.price-card .btn {
+    width: 100%;
+    text-align: center;
+}
+
+
+/* my ai challenge section */
+.sprint {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.sprint-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto 35px auto;
+}
+
+.sprint-card {
+    background-color: #f5f3ff;
+    border: 1px solid #e5e0ff;
+    border-radius: 12px;
+    padding: 30px 25px;
+    text-align: left;
+}
+
+.sprint-day {
+    color: #7c3aed;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.sprint-card h3 {
+    font-size: 19px;
+    margin: 10px 0;
+}
+
+.sprint-card p {
+    color: #666666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.prize-box {
+    background-color: #111827;
+    color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    padding: 40px 30px;
+}
+
+.prize-label {
+    color: #a5b4fc;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.prize-amount {
+    font-size: 45px;
+    margin: 8px 0 12px 0;
+}
+
+.prize-box p {
+    color: #cccccc;
+    margin-bottom: 25px;
+}
+
+
+/* footer */
+.footer {
+    background-color: #0d1b2a;
+    color: #aaaaaa;
+    padding: 45px 60px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-logo img {
+    width: auto;
+    height: 40px;
+}
+
+.footer-social a {
+    color: #ffffff;
+    font-size: 18px;
+    margin-left: 18px;
+}
+
+.footer-social a:hover {
+    color: #2563eb;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid #333333;
+    margin: 30px 0 20px 0;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 18px;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .speaker-grid,
+    .price-grid,
+    .sprint-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .speakers,
+    .pricing,
+    .sprint {
+        padding: 60px 20px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
